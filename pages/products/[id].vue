@@ -13,7 +13,9 @@
     const { id } = useRoute().params
     const uri = `https://fakestoreapi.com/products/${id}`
 
-    const { data: product } = await useFetch(uri)
+    // Nuxt does not fetch new data to save the SSR by default
+    // Thus, we need to explicitly set key as the second arguments to fetch new data for every time
+    const { data: product } = await useFetch(uri, { key: id })
 </script>
 
 <style scoped>
