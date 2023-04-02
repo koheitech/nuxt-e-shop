@@ -1,7 +1,8 @@
 <template>
     <div>
-        <p>Product details for {{ id }}</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero laboriosam corrupti exercitationem magnam quae! Blanditiis beatae, sint laboriosam, ratione perferendis libero praesentium fugit sapiente quidem id sit, delectus officiis nesciunt.</p>
+        <p>{{ product.title }}</p>
+        <p>{{ product.price }}</p>
+        <p>{{ product.id }}</p>
     </div>
 </template>
 
@@ -10,6 +11,9 @@
         layout: 'products'
     })
     const { id } = useRoute().params
+    const uri = `https://fakestoreapi.com/products/${id}`
+
+    const { data: product } = await useFetch(uri)
 </script>
 
 <style scoped>
