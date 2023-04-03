@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-    const { data } = await useFetch('/api/eshop')
+    const { data } = await useFetch('/api/eshop?name=foobar')
 </script>
 
 <style scoped>

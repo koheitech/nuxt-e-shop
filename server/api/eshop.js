@@ -1,7 +1,9 @@
-export default defineEventHandler(() => {
+export default defineEventHandler((event) => {
+
+    const { name = "shopper" } = getQuery(event)
 
     return {
-        message: `Hello, shopper`
+        message: `Hello, ${name}`
     }
 
 })
