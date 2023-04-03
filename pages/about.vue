@@ -8,7 +8,10 @@
 </template>
 
 <script setup>
-    const { data } = await useFetch('/api/eshop?name=foobar')
+    const { data } = await useFetch('/api/eshop?name=foobar', {
+        method: 'post',
+        body: { age: 30 }
+    })
 </script>
 
 <style scoped>
