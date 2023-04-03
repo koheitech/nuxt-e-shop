@@ -18,7 +18,8 @@
     // We cannot catch error since we cannot know the error until we know that we could not fetch the data
     // In this case, we can check the result in backend and throw a custom error
     if (!product.value) {
-        throw createError({ statusCode: 404, statusMessage: 'Product not found'})
+        // fatal: true is for explicitly checking the client-side error
+        throw createError({ statusCode: 404, statusMessage: 'Product not found', fatal: true })
     }
 </script>
 
