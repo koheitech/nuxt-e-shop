@@ -1,3 +1,4 @@
+<!-- name of the template does not have to match with the page name, but it is recommended for clarity -->
 <template>
     <div>
         <header class="shadow-sm bg-white">
@@ -24,4 +25,3 @@
     color: #12b488;
   }
 </style>
-

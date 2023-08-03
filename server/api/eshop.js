@@ -8,6 +8,7 @@ export default defineEventHandler(async (event) => {
 
     // api call with private key
     // use $fetch instead of useFetch for server route
+    // useFetch is a wrapper function of $fetch
     const { data } = await $fetch('https://api.currencyapi.com/v3/latest?apikey=PzxTdBKn6vhs3AHrbH0gvjntsnAEvRxzXAb4oboH')
 
     return {

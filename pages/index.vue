@@ -14,7 +14,8 @@
 
 </script>
 
-<style scoped>h2 {
+<style scoped>
+h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }

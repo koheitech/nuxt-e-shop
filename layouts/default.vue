@@ -12,6 +12,7 @@
         </header>
 
         <div class="container mx-auto p-4">
+            <!-- page content is going to be output here in the slot -->
             <slot />
         </div>
     </div>

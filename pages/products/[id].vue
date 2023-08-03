@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- overriding meta tags from the template -->
         <Head>
             <Title>Nuxt E-shop | {{ product.title }}</Title>
             <Meta name="description" :content="product.description" />
@@ -22,7 +23,7 @@
     // We cannot catch error since we cannot know the error until we know that we could not fetch the data
     // In this case, we can check the result in backend and throw a custom error
     if (!product.value) {
-        // fatal: true is for explicitly checking the client-side error
+        // fatal: true is for explicitly checking the client-side error such as button clicking
         throw createError({ statusCode: 404, statusMessage: 'Product not found', fatal: true })
     }
 </script>

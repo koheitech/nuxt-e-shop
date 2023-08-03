@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    // add modules
     modules: ['@nuxtjs/tailwindcss'],
+    // add custom meta data here
     app: {
         head: {
             title: 'Nuxt E-shop',
@@ -12,6 +14,7 @@ export default defineNuxtConfig({
             ]
         }
     },
+    // add API key
     runtimeConfig: {
         currencyKey: process.env.CURRENCY_API_KEY
     }

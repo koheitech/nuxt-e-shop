@@ -1,3 +1,4 @@
+<!-- this page is routed to `/products` -->
 <template>
     <div>
         <div class="grid grid-cols-4 gap-5">
@@ -10,12 +11,13 @@
 
 <script setup>
     definePageMeta({
-        layout: 'products'
+        layout: 'products' // layouts set to be products
     })
 
-    // fetch the products
+    // fetch 'data' and name it as 'products'
     const { data: products } = await useFetch('https://fakestoreapi.com/products')
 
+    // overriding meta tags for the specific page
     useHead({
         title: 'Nuxt E-shop | Products page',
         meta: [
