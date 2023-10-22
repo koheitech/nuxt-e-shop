@@ -8,6 +8,10 @@
     - [fakestoreapi](https://fakestoreapi.com/) for products data
     - [currencyapi.com](https://app.currencyapi.com/dashboard) for currency data
 
+## Demo
+![Oct-22-2023 10-01-51](https://github.com/koheitech/nuxt-e-shop/assets/91676145/86e319c9-f4b1-42d2-977a-ab2231b6db1d)
+
+
 ## Setup
 Make sure to install the dependencies:
 ```bash
